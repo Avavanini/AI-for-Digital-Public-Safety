@@ -3,6 +3,8 @@ import './index.css';
 
 import CitizenShield from './components/CitizenShield';
 import Scanner from './components/Scanner';
+import ThreatMap from './components/ThreatMap';
+import NetworkGraph from './components/NetworkGraph';
 
 function App() {
   return (
@@ -44,6 +46,8 @@ function App() {
         
         <div className="content-area animate-fade-in">
           <div className="dashboard-grid">
+            <ThreatMap />
+            <NetworkGraph />
             <CitizenShield />
             <Scanner />
           </div>
