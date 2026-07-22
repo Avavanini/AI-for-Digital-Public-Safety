@@ -1,6 +1,9 @@
 import React from 'react';
 import './index.css';
 
+import CitizenShield from './components/CitizenShield';
+import Scanner from './components/Scanner';
+
 function App() {
   return (
     <div className="app-container">
@@ -41,21 +44,8 @@ function App() {
         
         <div className="content-area animate-fade-in">
           <div className="dashboard-grid">
-            {/* Placeholder for Map */}
-            <div className="glass-panel" style={{ padding: '1.5rem', minHeight: '300px', display: 'flex', flexDirection: 'column' }}>
-              <h4 style={{ marginBottom: '1rem' }}>Live Threat Map</h4>
-              <div style={{ flex: 1, background: 'rgba(0,0,0,0.2)', borderRadius: '8px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-                <span className="text-secondary">Map View Loading...</span>
-              </div>
-            </div>
-
-            {/* Placeholder for Graph */}
-            <div className="glass-panel" style={{ padding: '1.5rem', minHeight: '300px', display: 'flex', flexDirection: 'column' }}>
-              <h4 style={{ marginBottom: '1rem' }}>Fraud Network Intel</h4>
-              <div style={{ flex: 1, background: 'rgba(0,0,0,0.2)', borderRadius: '8px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-                <span className="text-secondary">Graph Engine Starting...</span>
-              </div>
-            </div>
+            <CitizenShield />
+            <Scanner />
           </div>
         </div>
       </main>
